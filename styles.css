@@ -1,0 +1,85 @@
+:root {
+    background-color: #ff4500;
+    padding-bottom: 200px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: monospace;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+#title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 20px;
+}
+
+#name-label, #email-label, #number-label, #options-label, #absolutely-label, #checkbox-label {
+    font-size: 20px;
+}
+
+.experience-dropdown {
+    margin-top: 20px;
+    display: flex;
+    align-items: start;
+}
+
+form {
+    background-color: #ff4500;
+    border-radius: 25px;
+    height: 90%;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+textarea {
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+button {
+    width: 600px;
+    background-color: #cf4007;
+    border-radius: 10px;
+}
+
+#name-label, #email-label, #number-label, #name, #email, #number{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#name, #email, #number {
+    width: 100%;
+}
+
+input {
+    border-radius: 10px;
+}
+
+select {
+    border-radius: 10px;
+}
+
+option {
+    border-radius: 10px;
+}

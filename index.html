@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+
+    <body>
+
+        <div id="container">
+            <header class="header">
+                <h1 id="title"> My FCC Survey Project</h1>
+
+                <p id="description">Please take this brief survey to give me your thoughts!</p>
+            </header>
+
+            <form id="survey-form">
+                <div class="input-fields">
+                    <label for="name" id="name-label">Name
+                        <input type="text" id="name" placeholder="Please enter your full name" required> 
+                    </label>
+                    <label for="email" id="email-label">Email 
+                        <input type="email" id="email" placeholder="Please enter your email" required>
+                    </label>
+                    <label for="number" id="number-label">Age
+                        <input type="number" id="number" placeholder="Age" min="12" max="90">
+                    </label>
+                </div>
+
+                <div class="experience-dropdown">
+                <label for="options" id="options-label">Please select your experience: </label>
+                <select name="options" id="dropdown">
+                    <option value="none">None</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="some">Some classes/self-taught</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="experienced">Experienced</option>
+                </select>
+                </div>
+
+                <div class="radio-group"><p id="absolutely-label">Do you enjoy programming?</p>
+                <label for="absolutely">
+                    <input type="radio" name="enjoy-level" id="absolutely" value="absolutely" checked>Absolutely
+                </label>
+                <label for="somewhat">
+                    <input type="radio" name="enjoy-level" id="somewhat" value="somewhat">Somewhat/Still Learning
+                </label>
+                <label for="no">
+                    <input type="radio" name="enjoy-level" id="no" value="no">No I don't
+                </label>
+                </div>
+
+                <div class="checkbox-group"><p id="checkbox-label">Please select the field you are most interested in:</p>
+                    <label for="front-end"><input type="checkbox" name="interest" id="front-end" value="front-end" checked>Front-End Development</label>
+                    <label for="back-end"><input type="checkbox" name="interest" id="back-end" value="back-end">Back-End Development</label>
+                    <label for="data-analysis"><input type="checkbox" name="interest" id="data-analysis" value="data-analysis">Data Analysis</label>
+                    <label for="scientific"><input type="checkbox" name="interest" id="scientific" value="scientific">Scientific Computing</label>
+                    <label for="cyber"><input type="checkbox" name="interest" id="cyber" value="cyber">Cyber Security</label>
+                    <label for="none"><input type="checkbox" name="interest" id="none" value="none">None</label>
+                </div>
+
+                <div class="comments">
+                    <textarea placeholder="Please enter any comments you may have."></textarea>
+                </div>
+                
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
