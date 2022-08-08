@@ -1,85 +1,108 @@
 :root {
-    background-color: #ff4500;
-    padding-bottom: 200px;
+    background-color: #102542;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 body {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: monospace;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 10px;
-
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
 }
 
 #title {
     text-align: center;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: bold;
+    color: #cdd7d6;
 }
 
 #description {
-    font-size: 20px;
-}
-
-#name-label, #email-label, #number-label, #options-label, #absolutely-label, #checkbox-label {
-    font-size: 20px;
-}
-
-.experience-dropdown {
-    margin-top: 20px;
-    display: flex;
-    align-items: start;
+    font-size: 16px;
+    color: #cdd7d6;
 }
 
 form {
-    background-color: #ff4500;
-    border-radius: 25px;
-    height: 90%;
-    box-shadow: 3px 3px 3px 3px;
-}
-
-.checkbox-group, .radio-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
-
-textarea {
-    width: 600px;
-    height: 200px;
+    background-color: #f87060;
+    color: #102542;
+    border: 3px solid #cdd7d6;
     border-radius: 10px;
 }
 
-button {
-    width: 600px;
-    background-color: #cf4007;
-    border-radius: 10px;
+#survey-form {
+    box-shadow: 8px 8px 20px 1px black;
 }
 
-#name-label, #email-label, #number-label, #name, #email, #number{
+#name-label, #email-label, #name, #email, #number-label, #number {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
 }
 
 #name, #email, #number {
-    width: 100%;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-input {
+.experience-dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 15px;
     border-radius: 10px;
 }
 
-select {
+#dropdown {
     border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-option {
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: 14px;
+}
+
+#name-label, #email-label, #number-label, #options-label, #radio-label, #checkbox-label {
+    font-size: 20px;
+}
+
+#options-label, #radio-label, #checkbox-label {
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
     border-radius: 10px;
+    border: none;
+    margin-bottom: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    width: 150px;
+    margin: 0 auto;
+    background-color: #cdd7d6;
+    color: #102542;
+    font-weight: 550;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid #102542;
+    margin-bottom: 4px;
 }
